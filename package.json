@@ -1,0 +1,11 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "wetube clon",
+  "main": "index.js",
+  "author": "kwonohcheon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
