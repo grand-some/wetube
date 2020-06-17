@@ -1,4 +1,4 @@
-const express = require('express');
+const express=require('express');
 const app = express();
 
 const PORT=4000;
@@ -7,8 +7,8 @@ function handleListening(){
 }
 
 function handleHome(req, res){
-    console.log("Hi from Home")
-    res.send("hi kwon")
+    console.log("Hi from my Home")
+    res.send("hi kwon genius")
 }
 app.get("/", handleHome)
 app.listen(PORT, handleListening);
