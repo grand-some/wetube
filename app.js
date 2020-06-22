@@ -9,6 +9,9 @@ import globalRouter from './router/globalRouter'
 import routes from './routes'
 
 const app = express();
+
+app.set('view engine', 'pug');
+app.set('views', './views');
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
