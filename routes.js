@@ -6,14 +6,14 @@ const LOGOUT="/logout";
 const SERCH="/search";
 
 //Users
-const USER="/users";
-const USER_DETAIL="/:id";
-const EDIT_PROFILE="/edit-profile";
+const USERS="/users";
 const CHANGE_PASSWORD="/change-password";
+const EDIT_PROFILE="/edit-profile";
+const USER_DETAIL="/:id";
 
 //video
 
-const VIDEOS='/video';
+const VIDEOS='/videos';
 const UPLOAD="/upload";
 const VIDEO_DETAIL='/:id';
 const EDIT_VIDEO="/:id/edit"
@@ -26,7 +26,7 @@ join:JOIN,
 login:LOGIN,
 logout:LOGOUT,
 search:SERCH,
-user:USER, 
+users:USERS, 
 userDetail:USER_DETAIL,
 editProfile:EDIT_PROFILE,
 changePassword:CHANGE_PASSWORD,

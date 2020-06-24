@@ -4,7 +4,7 @@ export const login=(req, res)=>{res.render("login", {pageTitle:"Home"})};
 
 export const logout=(req, res)=>{res.render("logout", {pageTitle:"Home"})};
 
-export const user=(req, res)=>{res.render("users", {pageTitle:"Home"})};
+export const users=(req, res)=>{res.render("users", {pageTitle:"Home"})};
 
 export const userDetail=(req, res)=>{res.render('userDetail', {pageTitle:"Home"})};
 
