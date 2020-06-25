@@ -5,7 +5,7 @@ export const home=(req, res)=>{res.render("Home", {pageTitle:"Home", video})};
 export const search=(req, res)=>{
     const searchingBy=req.query.term;
     //const {qrury{term:searchingBy}}=req;
-    res.render("Search", {pageTitle:"search", searching:searchingBy})
+    res.render("Search", {pageTitle:"search", searchingBy, video})
 
 };
 
