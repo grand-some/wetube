@@ -4,6 +4,7 @@ block content
     .videos
         each vid in video
             +videoBlock({
+                id:vid.id,
                 title:vid.title,
                 views:vid.views,
                 videoFile:vid.videoFile

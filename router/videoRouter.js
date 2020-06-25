@@ -1,12 +1,14 @@
 import express from 'express';
 import routes from '../routes';
-import { videos, upload, videoDetail, editVideo, deleteVideos } from '../controllers/videoControllers';
+import { videos, getUpload, postUpload, videoDetail, editVideo, deleteVideos } from '../controllers/videoControllers';
 
 const videoRouter = express.Router();
 
 videoRouter.get('/', videos);
-videoRouter.get(routes.upload, upload);
-videoRouter.get(routes.videoDetail, videoDetail);
+videoRouter.get(routes.upload, getUpload);
+videoRouter.post(routes.upload, postUpload);
+
+videoRouter.get(routes.videoDetail(), videoDetail);
 videoRouter.get(routes.editVideo, editVideo);
 videoRouter.get(routes.deleteVideo, deleteVideos);
 export default videoRouter;
