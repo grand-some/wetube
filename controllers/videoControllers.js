@@ -1,17 +1,15 @@
-import {video} from "../db";
+import {videos} from "../db";
 import routes from '../routes';
 
 
-export const home=(req, res)=>{res.render("Home", {pageTitle:"Home", video})};
+export const home=(req, res)=>{res.render("Home", {pageTitle:"Home", videos})};
 
 export const search=(req, res)=>{
     const searchingBy=req.query.term;
     //const {qrury{term:searchingBy}}=req;
-    res.render("Search", {pageTitle:"search", searchingBy, video})
+    res.render("Search", {pageTitle:"search", searchingBy, videos})
 
 };
-
-export const videos=(req, res)=>{res.render('videos', {pageTitle:"videos"})};
 
 export const getUpload=(req, res)=>{
     res.render('upload', {pageTitle:"upload"})};

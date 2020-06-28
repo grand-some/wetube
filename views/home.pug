@@ -2,10 +2,10 @@ extends ./layouts/main.pug
 include mixins/videoBlock
 block content
     .videos
-        each vid in video
+        each video in videos
             +videoBlock({
-                id:vid.id,
-                title:vid.title,
-                views:vid.views,
-                videoFile:vid.videoFile
-            })
+                id:video.id,
+                videoFile:video.videoFile,
+                title:video.title,
+                views:video.views
+            })    

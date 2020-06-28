@@ -4,7 +4,6 @@ import { videos, getUpload, postUpload, videoDetail, editVideo, deleteVideos } f
 
 const videoRouter = express.Router();
 
-videoRouter.get('/', videos);
 videoRouter.get(routes.upload, getUpload);
 videoRouter.post(routes.upload, postUpload);
 
