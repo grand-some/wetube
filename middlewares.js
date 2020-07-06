@@ -12,5 +12,5 @@ export const localsMiddleware=(req, res, next)=>{
     next();
 };
 
-const multerVideo = multer({dest:'videos/'})
-export const uploadVideo = multerVideo.single("videoFile")
+const multerVideo = multer({dest:"./uploads/videos/"});
+export const uploadVideo = multerVideo.single("videoFile");
